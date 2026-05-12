@@ -2,18 +2,18 @@ import { activityFeed, activityStats } from '@/data/activity'
 
 export default function RecentActivity() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-16 md:py-32">
       <div className="container-x">
-        <div className="reveal max-w-3xl mb-14">
+        <div className="reveal max-w-3xl mb-10 md:mb-14">
           <span className="eyebrow">LIVE FROM THE STUDIO / 06</span>
           <h2 className="h-section mt-6">
             What we <span className="accent-italic">shipped</span> this week.
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-8 lg:gap-10 items-center">
           {/* Feed */}
-          <div className="reveal surface p-7 md:p-8 relative overflow-hidden">
+          <div className="reveal surface p-5 sm:p-7 md:p-8 relative overflow-hidden">
             {/* Bottom fade */}
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-surface to-transparent" />
 

@@ -29,8 +29,8 @@ export default function HomePage() {
       <ProjectSearch />
 
       {/* 4 — SERVICES */}
-      <section className="container-x py-24 md:py-32">
-        <div className="reveal max-w-3xl mb-16">
+      <section className="container-x py-16 md:py-32">
+        <div className="reveal max-w-3xl mb-10 md:mb-16">
           <span className="eyebrow">CAPABILITIES / 01</span>
           <h2 className="h-section mt-6">
             A full stack for <span className="accent-italic">intelligent</span> products.
@@ -40,7 +40,7 @@ export default function HomePage() {
             to operational automations and live data pipelines.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-5 auto-rows-[1fr]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 auto-rows-[1fr]">
           {services.map((s, i) => (
             <ServiceCard key={s.id} service={s} index={i} />
           ))}
@@ -51,7 +51,7 @@ export default function HomePage() {
       <Process />
 
       {/* 6 — STATS */}
-      <section className="container-x py-24">
+      <section className="container-x py-16 md:py-24">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           <StatCounter target={38}    suffix="+"  label="Production systems shipped across AI, commerce, and live ops." />
           <StatCounter target={99.97} decimals={2} suffix="%"  label="Uptime across deployed services in the last twelve months." />
@@ -64,8 +64,8 @@ export default function HomePage() {
       <TechStack />
 
       {/* 8 — FEATURED PROJECTS */}
-      <section className="container-x py-24">
-        <div className="reveal flex flex-wrap items-end justify-between gap-6 mb-14">
+      <section className="container-x py-16 md:py-24">
+        <div className="reveal flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-6 mb-10 md:mb-14">
           <div>
             <span className="eyebrow">SELECTED WORK / 05</span>
             <h2 className="h-section mt-6">

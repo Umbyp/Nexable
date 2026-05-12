@@ -1,11 +1,11 @@
 export default function Testimonial() {
   return (
-    <section className="relative py-28 md:py-36 overflow-hidden">
-      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-accent/[0.06] blur-3xl" />
+    <section className="relative py-16 md:py-36 overflow-hidden">
+      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] rounded-full bg-accent/[0.06] blur-2xl md:blur-3xl" />
 
       <div className="container-x relative">
         <div className="reveal max-w-3xl mx-auto text-center">
-          <div className="font-serif italic text-[120px] leading-none text-accent opacity-40">
+          <div className="font-serif italic text-[80px] md:text-[120px] leading-none text-accent opacity-40">
             &ldquo;
           </div>
 
@@ -17,7 +17,7 @@ export default function Testimonial() {
             {' '}we&apos;d been trying to articulate for two years.
           </blockquote>
 
-          <div className="inline-flex items-center gap-4 mt-8">
+          <div className="inline-flex items-center gap-4 mt-6 md:mt-8">
             <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent to-accent2 flex items-center justify-center text-bg font-semibold text-base">
               AP
             </div>
