@@ -48,15 +48,15 @@ export default function Navigation() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-1 bg-surface/80 backdrop-blur-md rounded-full p-1.5 border border-line">
+        <div className="hidden md:flex items-center gap-1 bg-surface-2/90 backdrop-blur-lg rounded-full p-1.5 border border-line-2 shadow-lg">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 ${
+              className={`px-4 py-2 text-sm rounded-full transition-all duration-200 ${
                 isActive(link.href)
-                  ? 'bg-surface-3 text-text-1 shadow-card'
-                  : 'text-text-2 hover:text-text-1'
+                  ? 'bg-text-1 text-bg font-semibold shadow-md'
+                  : 'text-text-2 hover:text-text-1 hover:bg-surface-3 font-medium'
               }`}
             >
               {link.label}
@@ -70,7 +70,7 @@ export default function Navigation() {
             Start a project
           </Link>
           <button
-            className="md:hidden flex items-center justify-center w-10 h-10 rounded-full border border-line bg-surface text-text-1 hover:bg-surface-2 transition-colors"
+            className="md:hidden flex items-center justify-center w-10 h-10 rounded-full border border-line-2 bg-surface-2 text-text-1 hover:bg-surface-3 transition-colors shadow-sm"
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Toggle menu"
           >
@@ -87,14 +87,14 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-line bg-bg/95 backdrop-blur-xl">
+        <div className="md:hidden border-b border-line-2 bg-surface/98 backdrop-blur-xl shadow-2xl">
           <div className="container-x py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-4 py-3 rounded-2xl text-base font-medium ${
-                  isActive(link.href) ? 'bg-surface-3 text-text-1' : 'text-text-2 hover:text-text-1 hover:bg-surface-2 transition-colors'
+                className={`px-4 py-3 rounded-2xl text-base transition-all duration-200 ${
+                  isActive(link.href) ? 'bg-text-1 text-bg font-semibold shadow-sm' : 'text-text-2 hover:text-text-1 hover:bg-surface-2 font-medium'
                 }`}
               >
                 {link.label}
