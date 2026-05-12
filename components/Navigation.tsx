@@ -48,7 +48,7 @@ export default function Navigation() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-1 bg-white/60 backdrop-blur-sm rounded-full p-1.5 border border-line">
+        <div className="hidden md:flex items-center gap-1 bg-surface/80 backdrop-blur-md rounded-full p-1.5 border border-line">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -70,7 +70,7 @@ export default function Navigation() {
             Start a project
           </Link>
           <button
-            className="md:hidden flex items-center justify-center w-10 h-10 rounded-full border border-line bg-white"
+            className="md:hidden flex items-center justify-center w-10 h-10 rounded-full border border-line bg-surface text-text-1 hover:bg-surface-2 transition-colors"
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Toggle menu"
           >
@@ -87,14 +87,14 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-line bg-white/95 backdrop-blur-xl">
+        <div className="md:hidden border-t border-line bg-bg/95 backdrop-blur-xl">
           <div className="container-x py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={`px-4 py-3 rounded-2xl text-base font-medium ${
-                  isActive(link.href) ? 'bg-surface-3 text-text-1' : 'text-text-1 hover:bg-surface-2'
+                  isActive(link.href) ? 'bg-surface-3 text-text-1' : 'text-text-2 hover:text-text-1 hover:bg-surface-2 transition-colors'
                 }`}
               >
                 {link.label}
