@@ -8,33 +8,32 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // === Nexable v1 — Dark + Phosphor Lime ===
-        bg:          '#0A0A0D',
-        'surface':   '#111114',
-        'surface-2': '#1A1A1F',
-        'surface-3': '#22232A',
-        line:        '#22232A',
-        'line-2':    '#2C2D35',
+        bg:          '#0B0F19',
+        'surface':   '#111827',
+        'surface-2': '#1F2937',
+        'surface-3': '#374151',
+        line:        '#1F2937',
+        'line-2':    '#374151',
 
         accent: {
-          DEFAULT: '#C5FA5A',
-          400: '#C5FA5A',
-          500: '#A8E33B',
-          600: '#88BF27',
+          DEFAULT: '#4F8CFF',
+          400: '#73A5FF',
+          500: '#4F8CFF',
+          600: '#2563EB',
         },
         accent2: {
-          DEFAULT: '#9B7BFF',
-          400: '#B59BFF',
-          500: '#9B7BFF',
-          600: '#8261F0',
+          DEFAULT: '#8B5CF6',
+          400: '#A78BFA',
+          500: '#8B5CF6',
+          600: '#7C3AED',
         },
-        accent3: { DEFAULT: '#FF8A4C' },
+        accent3: { DEFAULT: '#00D4FF' },
 
         text: {
-          DEFAULT: '#E8E8EC',
-          1: '#E8E8EC',
-          2: '#9CA0A8',
-          3: '#5C5F68',
+          DEFAULT: '#F9FAFB',
+          1: '#F9FAFB',
+          2: '#94A3B8',
+          3: '#64748B',
         },
       },
       fontFamily: {
@@ -50,8 +49,8 @@ const config: Config = {
         'soft':         '0 1px 2px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.3)',
         'card':         '0 4px 16px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.5)',
         'lift':         '0 24px 60px rgba(0,0,0,0.5), 0 8px 20px rgba(0,0,0,0.4)',
-        'glow-accent':  '0 0 0 1px rgba(197,250,90,0.3), 0 12px 40px rgba(197,250,90,0.25)',
-        'glow-accent2': '0 0 0 1px rgba(155,123,255,0.3), 0 12px 40px rgba(155,123,255,0.25)',
+        'glow-accent':  '0 0 0 1px rgba(79,140,255,0.3), 0 12px 40px rgba(79,140,255,0.25)',
+        'glow-accent2': '0 0 0 1px rgba(139,92,246,0.3), 0 12px 40px rgba(139,92,246,0.25)',
       },
       keyframes: {
         'pulse-soft': {

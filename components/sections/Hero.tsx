@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="container-x relative text-left pt-32 pb-24">
         {/* Eyebrow badge — green dot + uppercase mono text */}
         <div className="reveal inline-flex items-center gap-2.5 font-mono text-[11px] tracking-[0.22em] uppercase text-text-2">
-          <span className="w-2 h-2 rounded-full bg-accent shadow-[0_0_14px_#C5FA5A]" />
+          <span className="w-2 h-2 rounded-full bg-accent shadow-[0_0_14px_#4F8CFF]" />
           NOW SHIPPING <span className="text-text-3 mx-0.5">·</span> V1.0
         </div>
 

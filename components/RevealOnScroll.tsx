@@ -18,32 +18,25 @@ export default function RevealOnScroll() {
       },
       { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
     )
-    let observer: IntersectionObserver;
 
-    const elements = document.querySelectorAll('.reveal')
-    elements.forEach((el) => observer.observe(el))
-    const timeout = setTimeout(() => {
-      observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('in-view')
-              observer.unobserve(entry.target)
-            }
-          })
-        },
-        { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
-      )
-
-    return () => observer.disconnect()
-  }, [])
-      const elements = document.querySelectorAll('.reveal')
+    // ฟังก์ชันสำหรับหา Element ที่รอแอนิเมชันและยังไม่แสดงผล
+    const observeElements = () => {
+      const elements = document.querySelectorAll('.reveal:not(.in-view)')
       elements.forEach((el) => observer.observe(el))
-    }, 100)
+    }
+
+    observeElements()
+
+    // คอยจับตาดูว่า Next.js มีการแทรก DOM/เปลี่ยนหน้าหรือไม่
+    let mutationObserver: MutationObserver | null = null;
+    if (typeof document !== 'undefined' && document.body) {
+      mutationObserver = new MutationObserver(observeElements)
+      mutationObserver.observe(document.body, { childList: true, subtree: true })
+    }
 
     return () => {
-      clearTimeout(timeout)
-      if (observer) observer.disconnect()
+      observer.disconnect()
+      if (mutationObserver) mutationObserver.disconnect()
     }
   }, [pathname])
 

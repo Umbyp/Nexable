@@ -101,13 +101,17 @@
   /* Backgrounds */
   .gradient-mesh {
     background-image:
-      radial-gradient(ellipse 50% 40% at 30% 30%, rgba(197, 250, 90, 0.06), transparent 60%),
-      radial-gradient(ellipse 50% 40% at 70% 70%, rgba(155, 123, 255, 0.06), transparent 60%);
+      radial-gradient(ellipse 50% 40% at 30% 30%, rgba(79, 140, 255, 0.06), transparent 60%),
+      radial-gradient(ellipse 50% 40% at 70% 70%, rgba(139, 92, 246, 0.06), transparent 60%);
   }
   .gradient-mesh-strong {
     background-image:
-      radial-gradient(circle at 20% 20%, rgba(197, 250, 90, 0.10), transparent 50%),
-      radial-gradient(circle at 80% 80%, rgba(155, 123, 255, 0.10), transparent 50%);
+      radial-gradient(circle at 20% 20%, rgba(79, 140, 255, 0.10), transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.10), transparent 50%);
+  }
+
+  .gradient-navy-indigo {
+    background: linear-gradient(135deg, theme('colors.surface') 0%, theme('colors.surface-2') 100%);
   }
 
   /* Glass nav */

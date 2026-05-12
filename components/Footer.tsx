@@ -9,8 +9,8 @@ export default function Footer() {
           <div className="col-span-2">
             <Link href="/" className="flex items-center gap-2.5 mb-4">
               <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-                <circle cx="16" cy="16" r="14" stroke="#C5FA5A" strokeWidth="2" />
-                <path d="M10 22V10l12 12V10" stroke="#C5FA5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <circle cx="16" cy="16" r="14" stroke="#4F8CFF" strokeWidth="2" />
+                <path d="M10 22V10l12 12V10" stroke="#4F8CFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <span className="font-bold text-lg text-text-1">Nexable</span>
             </Link>

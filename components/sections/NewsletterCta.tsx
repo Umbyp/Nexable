@@ -23,7 +23,7 @@ export default function NewsletterCta() {
 
         <div className="relative">
           <h2 className="text-h-section font-bold text-text-1">
-            Subscribe to <span className="accent-italic !text-[#C7B8FF]">field notes.</span>
+            Subscribe to <span className="accent-italic !text-[#00D4FF]">field notes.</span>
           </h2>
           <p className="mt-6 text-text-2 max-w-xl mx-auto text-lg">
             One email a month. New essays on what we're shipping, what's breaking, what's next. No hype.

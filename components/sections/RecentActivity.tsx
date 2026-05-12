@@ -19,7 +19,7 @@ export default function RecentActivity() {
 
             <div className="flex items-center justify-between mb-6 font-mono text-[11px] tracking-[0.15em]">
               <span className="inline-flex items-center gap-2 text-text-3">
-                <span className="w-2 h-2 rounded-full bg-accent animate-live-blink shadow-[0_0_12px_#C5FA5A]" />
+                <span className="w-2 h-2 rounded-full bg-accent animate-live-blink shadow-[0_0_12px_#4F8CFF]" />
                 DEPLOY FEED
               </span>
               <span className="text-text-3">LAST 72H</span>
